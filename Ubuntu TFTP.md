@@ -33,6 +33,11 @@ sudo mkdir /tftpdir
 sudo chmod 777 /tftpdir
 ```
 
+### TFTP service 재시작
+```
+sudo /etc/init.d/xinetd restart
+```
+
 ### 정상 동작 테스트 
 ```
 $ cd /tftpdir
