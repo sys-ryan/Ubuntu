@@ -10,6 +10,7 @@ sudo apt-get install tftp tftpd xinetd
 sudo vi /etc/xinetd.d/tftp 
 ```
 
+
 ```
 service tftp
 {
@@ -24,6 +25,7 @@ service tftp
   cps = 100 2
   flags = IPv4
 }
+```
 
 ### TFTP 디렉터리 설정 
 ```
