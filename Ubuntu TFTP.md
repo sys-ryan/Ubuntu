@@ -29,8 +29,8 @@ service tftp
 
 ### TFTP 디렉터리 설정 
 ```
-sudo mkdir /tftpdir
-sudo chmod 777 /tftpdir
+sudo mkdir /tftpboot
+sudo chmod 777 /tftpboot
 ```
 
 ### TFTP service 재시작
