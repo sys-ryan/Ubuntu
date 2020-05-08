@@ -4,6 +4,8 @@ sudo apt-get install vim
 ```
 
 ### set environment
+`vi ~/.vimrc`
+
 ```
 set number          
 set tabstop=4         
