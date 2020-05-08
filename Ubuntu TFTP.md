@@ -1,13 +1,13 @@
-# Ubuntu TFTP 
+# Ubuntu TFTP
 
-### 설치 
+### 설치
 ```
-sudo apt-get install tftp tftpd xinetd 
+sudo apt-get install tftp tftpd xinetd
 ````
 
-### 설정 파일 
+### 설정 파일
 ```
-sudo vi /etc/xinetd.d/tftp 
+sudo vi /etc/xinetd.d/tftp
 ```
 
 
@@ -27,7 +27,7 @@ service tftp
 }
 ```
 
-### TFTP 디렉터리 설정 
+### TFTP 디렉터리 설정
 ```
 sudo mkdir /tftpboot
 sudo chmod 777 /tftpboot
@@ -38,15 +38,14 @@ sudo chmod 777 /tftpboot
 sudo /etc/init.d/xinetd restart
 ```
 
-### 정상 동작 테스트 
+### 정상 동작 테스트
 ```
 $ cd /tftpdir
-$ vi test 
-$ tftp localhost 
+$ vi test
+$ tftp localhost
 tftp> get test
 received ?? bytes in ?? seconds
 tftp>quit
 $ cat test
 test의 내용
 ```
-
